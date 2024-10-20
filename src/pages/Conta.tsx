@@ -1,4 +1,4 @@
-import { SimpleGrid, Spinner } from "@chakra-ui/react"
+import { Center, SimpleGrid, Spinner } from "@chakra-ui/react"
 import { useParams, useNavigate } from 'react-router-dom'
 import CardInfo from "../components/CardInfo"
 import { useContext, useEffect, useState } from "react"
@@ -50,9 +50,9 @@ const Conta = () => {
             {
                 userData === undefined || userData === null ?
                     (
-                        <center>
+                        <Center>
                             <Spinner size='xl' color="white" />
-                        </center>
+                        </Center>
                     ) :
                     (
                         <>
